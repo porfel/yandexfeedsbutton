@@ -6,7 +6,6 @@ yandexfeedsbutton
 
 Для работы необходимо авторизоваться в Яндексе.
 
-Sources: https://github.com/porfel/yandexfeedsbutton
 На пиво:
 WMR: R575325678698
 ЯД:  41001286002974
