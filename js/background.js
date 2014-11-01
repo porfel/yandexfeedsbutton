@@ -19,7 +19,7 @@ function displayFeed(){
         icon = 'lenta-unautorized.png';
         badgeText = 'Необходимо авторизоваться в Яндексе';
     } else {
-	    icon = count > 0 ? 'lenta-unread.png' : 'lenta.png';
+        icon = count > 0 ? 'lenta-unread.png' : 'lenta.png';
         badgeText = count > 0 ? 'Непрочитанных: ' + count : "Непрочитанных подписок нет";
     }
     var icon_text = count > 0 ? "" + count : "";
@@ -31,7 +31,7 @@ function displayFeed(){
 }
 
 function checkFeed(){
-	var checkInterval = 60000;
+    var checkInterval = 60000;
     var pageContent;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open('GET', 'http://m.lenta.yandex.ru/unread.xml', false);
@@ -63,10 +63,6 @@ function checkFeed(){
     displayFeed();
     setTimeout('checkFeed()', checkInterval);
     return;
-}
-
-function openTab(){
-    chrome.tabs.create({url: "https://mail.yandex.ru/my/#lenta/group/all",selected: true}, function() {});  
 }
 
 checkFeed();
