@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Кнопка Яндекс.Подписок",
+    "version": "1.0.1",
+    "description": "Отображает количество непрочитанных сообщений в Яндекс.Подписках",
+    "permissions": [
+        "http://m.lenta.yandex.ru/unread.xml"
+    ],
+    "icons" : {
+        "32" : "lenta.png",
+        "48" : "lenta.png",
+        "128": "lenta-128.png"
+    },
+    "background": {
+        "scripts": [ "js/background.js" ]
+    },
+    "browser_action": {
+        "default_title": "Кнопка Яндекс.Подписок",
+	    "default_icon": "lenta.png"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
+
