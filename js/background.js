@@ -31,7 +31,6 @@ function displayFeed(){
 }
 
 function checkFeed(){
-    var checkInterval = 60000;
     var pageContent;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open('GET', 'http://m.lenta.yandex.ru/unread.xml', false);
@@ -61,12 +60,14 @@ function checkFeed(){
     var rawCounter = pageContent.substring(startPos,pageContent.indexOf(endTag));
     count = rawCounter.replace(" ","").replace("(","").replace(")","");
     displayFeed();
-    setTimeout('checkFeed()', checkInterval);
     return;
 }
 
-checkFeed();
+function runner(){
+	var checkInterval = 60000;
+	setTimeout("runner()", checkInterval);
+	checkFeed();
+}
 
-
-
+runner();
 

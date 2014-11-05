@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Кнопка Яндекс.Подписок",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Отображает количество непрочитанных сообщений в Яндекс.Подписках",
     "permissions": [
         "http://m.lenta.yandex.ru/unread.xml"
