@@ -1,0 +1,23 @@
+{
+   "chrome_extension_description": {
+      "description": "Сhrome extension description",
+      "message": "Displays count of unread posts at Yandex.Feeds"
+   },
+   "chrome_extension_name": {
+      "description": "Сhrome extension name",
+      "message": "Yandex.Feeds button"
+   },
+   "chrome_extension_title": {
+      "description": "Сhrome extension button description",
+      "message": "Yandex.Feeds button"
+   },
+   "bageTitleUnauth": {
+      "message": "Need to be authorized at yandex"
+   },
+   "bageTextIfUnreadExist": {
+      "message": "Unread: "
+   },
+   "bageTextIfNoUnread": {
+      "message": "No unread posts"
+   }
+}

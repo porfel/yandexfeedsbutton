@@ -18,10 +18,10 @@ function displayFeed(){
     var icon;
     if ( unautorized == 1 ) {
         icon = 'lenta-unautorized.png';
-        badgeText = 'Необходимо авторизоваться в Яндексе';
+        badgeText = chrome.i18n.getMessage("bageTitleUnauth");
     } else {
         icon = count > 0 ? 'lenta-unread.png' : 'lenta.png';
-        badgeText = count > 0 ? 'Непрочитанных: ' + count : "Непрочитанных подписок нет";
+        badgeText = count > 0 ? chrome.i18n.getMessage("bageTextIfUnreadExist") + count : chrome.i18n.getMessage("bageTextIfNoUnread");
     }
     var icon_text = count > 0 ? "" + count : "";
     

@@ -1,0 +1,23 @@
+{
+   "chrome_extension_description": {
+      "description": "Сhrome extension description",
+      "message": "Отображает количество непрочитанных сообщений в Яндекс.Подписках"
+   },
+   "chrome_extension_name": {
+      "description": "Сhrome extension name",
+      "message": "Кнопка Яндекс.Подписок"
+   },
+   "chrome_extension_title": {
+      "description": "Сhrome extension button description",
+      "message": "Кнопка Яндекс.Подписок"
+   },
+   "bageTitleUnauth": {
+      "message": "Необходимо авторизоваться в Яндексе"
+   },
+   "bageTextIfUnreadExist": {
+      "message": "Непрочитанных: "
+   },
+   "bageTextIfNoUnread": {
+      "message": "Непрочитанных подписок нет"
+   }
+}
